@@ -1,6 +1,6 @@
 # ClipboardLoader
 テキストファイルを読み込んで1行ずつクリップボードに書き込むツールです。1行ずつのコピペが簡単にできます。
-Typing Tube(https://typing-tube.net/)の譜面作成などにどうぞ
+Typing Tube(https://typing-tube.net/ )の譜面作成などにどうぞ
 
 ・使い方
 1.「...」ボタンを押して読み込むテキストファイルを選択する
