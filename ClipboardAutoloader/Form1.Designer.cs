@@ -87,6 +87,7 @@
             this.BackButton.TabIndex = 4;
             this.BackButton.Text = "前へ";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // NextButton
             // 

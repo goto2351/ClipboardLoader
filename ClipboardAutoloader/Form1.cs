@@ -86,6 +86,25 @@ namespace ClipboardAutoloader
 
         }
 
+        //前の行をクリップボードにセットするメソッド
+        private void SetPrevLine()
+        {
+            //1行目にいるときは何もしない
+            if(LineNumber > 1)
+            {
+                //1行前に戻す
+                LineNumber -= 1;
+
+                //行を読み込んでクリップボードに書き込み
+                string PrevLine = text[LineNumber - 1];
+                Clipboard.SetText(PrevLine);
+
+                //ステータスバーを更新
+                NextLine = text[LineNumber];
+                StatusLabel.Text = "次の行: " + NextLine;
+            }
+        }
+
         private void LoadButton_Click(object sender, EventArgs e)
         {
             ReadText(FilepathBox.Text);
@@ -126,6 +145,11 @@ namespace ClipboardAutoloader
             {
                 Invoke(new SetFocusDelegate(SetNextLine));
             }
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            SetPrevLine();
         }
     }
 }

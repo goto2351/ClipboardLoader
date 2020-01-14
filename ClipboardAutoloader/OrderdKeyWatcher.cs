@@ -7,6 +7,8 @@ using System.Threading;
 
 namespace ClipboardAutoloader
 {
+    //http://sheepdogjam.cocolog-nifty.com/blog/2013/12/4-cbb2.html より引用
+
     public class OrderdKeyWatcher
     {
         /// <summary>
